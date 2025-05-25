@@ -35,7 +35,7 @@ jobs:
         uses: redhat-actions/buildah-build@v2
         with:
           containerfiles: ./Containerfile
-          image: bitnet
+          image: bitnet-server
           labels: |
             org.opencontainers.image.description=https://huggingface.co/microsoft/bitnet-b1.58-2B-4T-gguf
 
