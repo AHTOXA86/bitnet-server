@@ -15,4 +15,4 @@ RUN cmake --build build --target llama-server --config Release
 
 COPY ggml-model-i2_s.gguf .
 
-CMD ["python3", "run_inference_server.py", "-m", "ggml-model-i2_s.gguf", "-p", "You are a helpful assistant. Always follow the user's instructions."]
+CMD ["python3", "run_inference_server.py", "-m", "ggml-model-i2_s.gguf", "--host", "0.0.0.0", "--port", "11434", "-p", "You are a helpful assistant. Always follow the user's instructions."]
